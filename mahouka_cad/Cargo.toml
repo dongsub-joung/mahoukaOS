@@ -2,7 +2,7 @@
 name = "mahouka_cad"
 version = "0.1.0"
 edition = "2018"
-
+authors= ["Dongsub Joung <kirino1103@proton.me>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [profile.dev]
@@ -10,5 +10,7 @@ panic = "abort"
 
 [profile.release]
 panic = "abort"
+
+default-features = false
 
 [dependencies]

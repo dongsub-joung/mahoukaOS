@@ -4,10 +4,9 @@
 use core::panic::PanicInfo;
 
 #[panic_handler]
-fn panic(_info: &PanicInfo) -> !{
-    loop {
-
-    }
+#[cfg_attr(not(feature = "std"), no_std)]
+fn panic(_info: &PanicInfo) -> ! {
+    loop {}
 }
 
 #[no_mangle]
